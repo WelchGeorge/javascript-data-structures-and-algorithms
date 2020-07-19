@@ -1,11 +1,17 @@
 //given an object, finds all values and converts them to strings.
 function stringifyNumbers(obj) {
-    for (key in obj) {
-        if (typeof obj[key] === "object") obj[key] = stringifyNumbers(obj[key]);
-        if (typeof obj[key] === "number") obj[key] = obj[key].toString();
+    var newObj = {};
+    for (var key in obj) {
+      if (typeof obj[key] === 'number') {
+        newObj[key] = obj[key].toString();
+      } else if (typeof obj[key] === 'object' && !Array.isArray(obj[key])) {
+        newObj[key] = stringifyNumbers(obj[key]);
+      } else {
+        newObj[key] = obj[key];
+      }
     }
-    return obj;
-}
+    return newObj;
+  }
 
 
 let obj = {

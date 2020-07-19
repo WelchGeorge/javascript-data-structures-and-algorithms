@@ -1,7 +1,7 @@
 //given an object, returns an array of all strings in the object.
 function collectStrings(obj) {
     let output = [];
-    for (key in obj) {
+    for (let key in obj) {
         if (typeof obj[key] === "object") output = output.concat(collectStrings(obj[key]));
         if (typeof obj[key] === "string") output.push(obj[key]);
     }

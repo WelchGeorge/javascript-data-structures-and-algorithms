@@ -1,9 +1,7 @@
 //given an array and a value, returns the index at which the value exists. if no value exists return -1.
 function linearSearch(arr, val) {
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === val) {
-            return i;
-        }
+        if (arr[i] === val) return i;
     }
     return -1;
 }  

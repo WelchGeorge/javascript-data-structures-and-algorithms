@@ -1,7 +1,7 @@
 //every parent has at most two children.
 //every left child is ALWAYS less than its parent.
 //every right child is ALWAYS greater than its parent.
-//insert and search are both O(log n) time.
+//insert and search are both O(log n) time in average case; worst O(n).
 
 class Node {
     constructor(val) {

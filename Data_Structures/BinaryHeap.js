@@ -25,8 +25,9 @@ class MaxBinaryHeap {
     }
     extractMax() {
         //swap first and last in values and pop to remove and return largest value.
-        const end = this.values.pop();
         const max = this.values[0];
+        const end = this.values.pop();
+        
         if (this.values.length === 0) return max;
         this.values[0] = end;
         

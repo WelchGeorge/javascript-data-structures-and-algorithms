@@ -2,6 +2,7 @@
 //in a max heap every child is always less than its parent.
 //in a min heap every child is alwasy greater than its parent.
 //all children are as full as can be and left children are filled first.
+//average time complexity O(log n) for insertion and removal. Search is O(n).
 
 //array implementation: for each node at index n, the left child is at 2n+1 and right at 2n+2.
 

@@ -1,4 +1,5 @@
 //using min binary heap implementation.
+// dequeues based on priority. O(log n) time for insertion and removal.
 
 class Node {
     constructor(val, priority) {

@@ -1,5 +1,5 @@
 //takes a key, value pair and hashes the key to give a semi-unique index in an array to store the pair.
-//for duplicate indices stores in an array at that index.
+//for duplicate indices stores in an array at that index using seperate chaining.
 //insertion, deletion and access are all O(1) time.
 
 class HashTable {
